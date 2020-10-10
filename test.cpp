@@ -1,10 +1,16 @@
 #include <iostream>
-#include <cmath>
+#include <array>
 
 int main (){
 
-    for (int i = 0; i <= 360; i++) {
-        std::cout << "Angle : " << i << " / sine = " << cos(i) << std::endl;
+    std::array<int, 10> data;
+
+    for(int i =0; i < 10; i++) {
+        data[i] = i;
+    }
+
+    for(int i =0; i < 10; i++) {
+        std::cout << data[i] << std::endl; 
     }
 
     return 0;
