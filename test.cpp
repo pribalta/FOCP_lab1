@@ -2,15 +2,17 @@
 
 int main (){
 
-    int my_number; // Empty variable to store input
+    int my_number;
 
     std::cout << "Please introduce a number:" << std::endl;
 
-    std::cin >> my_number; // Read input from cin and put it in variable
+    std::cin >> my_number;
 
-    std::cout << "The number you introduced is:" << std::endl;
-
-    std::cout << my_number << std::endl; // print variable using cout
+    if (my_number % 2 == 0) {
+        std::cout << "This number is even" << std::endl;
+    } else {
+        std::cout << "This number is odd" << std::endl;
+    }
 
     return 0;
 }
