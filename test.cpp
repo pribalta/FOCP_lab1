@@ -2,29 +2,15 @@
 
 int main (){
 
-    // ax + b = c
-    // ax = c - b
-    // x = (c - b) / a
+    int times;
 
-    float a;
-    float b;
-    float c;
+    std::cout << "Please introduce the number of times you want to repeat the sentence:" << std::endl;
 
-    std::cout << "Please introduce a value for a:" << std::endl;
+    std::cin >> times;
 
-    std::cin >> a;
-
-    std::cout << "Please introduce a value for b:" << std::endl;
-
-    std::cin >> b;
-
-    std::cout << "Please introduce a value for c:" << std::endl;
-
-    std::cin >> c;
-
-    float x = (c - b) / a;
-
-    std::cout << "The value of x is: " << x << std::endl;
+    for(int i = 0; i < times; i++) {
+        std::cout << "I will not talk in class" << std::endl;
+    }
 
     return 0;
 }
