@@ -2,17 +2,29 @@
 
 int main (){
 
-    int my_number;
+    // ax + b = c
+    // ax = c - b
+    // x = (c - b) / a
 
-    std::cout << "Please introduce a number:" << std::endl;
+    float a;
+    float b;
+    float c;
 
-    std::cin >> my_number;
+    std::cout << "Please introduce a value for a:" << std::endl;
 
-    if (my_number % 2 == 0) {
-        std::cout << "This number is even" << std::endl;
-    } else {
-        std::cout << "This number is odd" << std::endl;
-    }
+    std::cin >> a;
+
+    std::cout << "Please introduce a value for b:" << std::endl;
+
+    std::cin >> b;
+
+    std::cout << "Please introduce a value for c:" << std::endl;
+
+    std::cin >> c;
+
+    float x = (c - b) / a;
+
+    std::cout << "The value of x is: " << x << std::endl;
 
     return 0;
 }
